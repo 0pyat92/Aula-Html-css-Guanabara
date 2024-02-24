@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <style>
+        body {
+            padding-top: 40px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, rgb(48, 13, 13), rgb(56, 8, 8), rgb(73, 7, 7));
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            
+        }
+        .container img {
+            display: block;
+            margin: 0 auto 20px;
+            
+        }
+        .container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: aliceblue;
+            border-radius: 25px;
+            box-shadow: 1px 1px 5px rgb(182, 167, 167);
+            background-image: linear-gradient(to right, rgb(22, 5, 5), rgb(29, 2, 2),rgb(73, 5, 5));
+            
+
+        }
+        .container button {
+            width: 30%;
+            padding: 10px;
+            background-image: linear-gradient(to right, rgb(22, 5, 5), rgb(29, 2, 2), rgb(73, 5, 5));
+            color: aliceblue;
+            border-radius: 25px;
+            align-items: auto;
+            box-shadow: 1px 1px 5px rgb(182, 167, 167);
+        }
+        
+        .cadeado{
+            margin-top: 100px;
+            width: 30px;
+            
+            
+        }
+
+        .arthur{
+            color: rgb(141, 4, 4);
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+   <header></header>
+    <div class="container">
+        <img class="cadeado" id="myImage" src="img/R.png" alt="Sua Imagem">
+        
+        <h1 class="arthur">Arthur Fernandes</h1>
+        <input type="text" id="username" placeholder="Nome de usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+    </div>
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (username === '0pripat' && password === '12345') {
+                window.location.href = 'http://127.0.0.1:5500/fundo002.html'; // Substitua 'sua-pagina.html' pelo URL da sua página
+            } else {
+                alert('Nome de usuário ou senha incorretos!');
+            }
+        }
+
+        var deg = 0;
+setInterval(function() {
+    document.getElementById('myImage').style.transform = 'rotate(' + deg + 'deg)';
+    deg += 1;
+},10);
+
+    </script>
+   
+</body>
+<footer style="            background-image: linear-gradient(to right, rgb(48, 13, 13), rgb(56, 8, 8), rgb(73, 7, 7));
+ text-align: center; padding: 9px;">
+    <p>© 2023 Arthur Fernandes. Todos os direitos reservados.</p>
+   
+  
+</footer>
+
+</html>

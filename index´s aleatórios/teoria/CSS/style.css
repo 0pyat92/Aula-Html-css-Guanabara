@@ -1,0 +1,51 @@
+/*Integração inicial*/
+h1 {
+    color:blue;
+} 
+/*Comentários do CSS*/
+h3 {
+ color:green;
+}
+#title {
+    color:blue;
+}
+
+
+    .text {
+        color:green;
+    }
+
+.background {
+    background-color:red;
+    color:blue;
+    font-size: 30px
+}
+/*dois elementos, uma regra*/
+
+p, 
+.title-small {
+    color:darkmagenta;
+}
+.title-small {
+    font-size: 25px;
+}
+/*background image*/
+.backgroud-image {
+    background-image: url("../img/img/meteoro.jpg");
+    padding: 20px;
+    color: white;
+}
+/*width-height*/
+#width-height {
+    width: 200px;
+    height: 100px;
+background-color: black;
+}
+/*padding*/
+#padding {
+    background-color: magenta;
+    padding: 20px;
+}
+#margin {
+    
+}
